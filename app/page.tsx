@@ -1,4 +1,4 @@
-// app/page.js
+// app/page.tsx
 
 export const metadata = {
   title: "Qi Chen's Portfolio",
@@ -19,7 +19,7 @@ export default function Home() {
           <h1 className="text-6xl font-bold mb-4">Qi Chen.</h1>
           <h2 className="text-4xl font-bold text-lightGray mb-4">I build products with code</h2>
           <p className="text-lg mb-4">
-            I'm a Software Engineer based in Los Angeles. I build modern web and mobile applications with the latest technologies. 
+            I&apos;m a Software Engineer based in Los Angeles. I build modern web and mobile applications with the latest technologies. 
             I also have experience in backend engineering. Mostly React.js, Next.js & Node.js.
           </p>
           <a href="#contact" className="mt-6 px-4 py-2 border border-lightGreen text-lightGreen rounded-md hover:bg-lightGreen hover:text-darkBlue transition-colors duration-300">
