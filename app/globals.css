@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 :root {
+  --darkBlue: #0A192F;
+  --lightGreen: #64FFDA;
+  --lightGray: #CCD6F6;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,6 +29,46 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: 'Inter', sans-serif;
+}
+
+.bg-darkBlue {
+  background-color: var(--darkBlue);
+}
+
+.text-lightGreen {
+  color: var(--lightGreen);
+}
+
+.text-lightGray {
+  color: var(--lightGray);
+}
+
+.border-lightGreen {
+  border-color: var(--lightGreen);
+}
+
+.hover\:bg-lightGreen:hover {
+  background-color: var(--lightGreen);
+}
+
+.hover\:text-darkBlue:hover {
+  color: var(--darkBlue);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
 }
 
 @layer utilities {
